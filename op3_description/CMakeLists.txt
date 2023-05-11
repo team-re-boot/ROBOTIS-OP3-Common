@@ -25,10 +25,7 @@ ament_auto_package(
 	meshes
   rviz
 	urdf
+  model
 )
-
-#install(DIRECTORY rviz meshes urdf launch
-#  DESTINATION share/${PROJECT_NAME}
-#)
 
 install(FILES DESTINATION share/${PROJECT_NAME})

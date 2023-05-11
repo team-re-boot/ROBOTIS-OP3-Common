@@ -420,10 +420,28 @@ links:
       0.00000011, 0.00008721, 0.00000084,
       -0.00000910, 0.00000084, 0.00004529 ]
     elements:
-      Transform:
+      -
+        type: Transform
         scale: [0.001, 0.001, 0.001]
         elements:
           Resource: { uri: "../meshes/h2.stl" }
+  -
+    name: cam_link
+    parent: head_tilt
+    translation: [ 0.01425, -0.019, 0.04975 ]
+    rotation: [ [ 1, 0, 0, 90 ], [ 0, 1, 0, -90 ] ]
+    jointType: fixed
+    elements:
+      -
+        type: Camera
+        name: camera
+        format: COLOR
+        fieldOfView: 58
+        nearClipDistance: 0.001
+        width: 640
+        height: 360
+        frameRate: 30
+        on: true
 
 linkGroup:
   - name: UPPER-BODY

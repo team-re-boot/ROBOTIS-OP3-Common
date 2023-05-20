@@ -128,7 +128,7 @@ links:
     rotation: [0, 1, 0, 0]
     jointId: 5
     jointType: revolute
-    jointAxis: Y
+    jointAxis: X
     jointRange: [-180,  180]
     mass: 0.06934
     centerOfMass: [ 0.02373, 0.01037, -0.02760 ]
@@ -248,7 +248,7 @@ links:
     rotation: [0, 1, 0, 0]
     jointId: 11
     jointType: revolute
-    jointAxis: Y
+    jointAxis: X
     jointRange: [-180,  180]
     mass: 0.06934
     centerOfMass: [ 0.02373, -0.01037, -0.02760 ]

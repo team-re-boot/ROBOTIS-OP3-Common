@@ -8,6 +8,7 @@ links:
   -
     name: body_link
     jointType: free
+    jointId: 0
     translation: [0.0, 0.0, 0.0]
     rotation: [0, 1, 0, 0]
     mass: 1.34928
@@ -20,13 +21,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/body.stl" }
+          Resource: { uri: "../meshes/dae/body.dae" }
   -
     name: l_hip_yaw
     parent: body_link
     translation: [0.0, 0.035, 0.0]
     rotation: [0, 1, 0, 0]
-    jointId: 0
+    jointId: 1
     jointType: revolute
     jointAxis: Z
     jointRange: [-180,  180]
@@ -40,13 +41,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/ll1.stl" }
+          Resource: { uri: "../meshes/dae/ll1.dae" }
   -
     name: l_hip_roll
     parent: l_hip_yaw
     translation: [-0.024, 0.0, -0.0285]
     rotation: [0, 1, 0, 0]
-    jointId: 1
+    jointId: 2
     jointType: revolute
     jointAxis: X
     jointRange: [-180,  180]
@@ -60,13 +61,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/ll2.stl" }
+          Resource: { uri: "../meshes/dae/ll2.dae" }
   -
     name: l_hip_pitch
     parent: l_hip_roll
     translation: [0.0241, 0.019, 0.0]
     rotation: [0, 1, 0, 0]
-    jointId: 2
+    jointId: 3
     jointType: revolute
     jointAxis: Y
     jointRange: [-180,  180]
@@ -80,13 +81,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/ll3.stl" }
+          Resource: { uri: "../meshes/dae/ll3.dae" }
   -
     name: l_knee
     parent: l_hip_pitch
     translation: [0.0, 0.0, -0.11015]
     rotation: [0, 1, 0, 0]
-    jointId: 3
+    jointId: 4
     jointType: revolute
     jointAxis: Y
     jointRange: [-180,  180]
@@ -100,13 +101,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/ll4.stl" }
+          Resource: { uri: "../meshes/dae/ll4.dae" }
   -
     name: l_ank_pitch
     parent: l_knee
     translation: [0, 0, -0.110]
     rotation: [0, 1, 0, 0]
-    jointId: 4
+    jointId: 5
     jointType: revolute
     jointAxis: Y
     jointRange: [-180,  180]
@@ -120,13 +121,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/ll5.stl" }
+          Resource: { uri: "../meshes/dae/ll5.dae" }
   -
     name: l_ank_roll
     parent: l_ank_pitch
     translation: [ -0.0241, -0.019, 0 ]
     rotation: [0, 1, 0, 0]
-    jointId: 5
+    jointId: 6
     jointType: revolute
     jointAxis: X
     jointRange: [-180,  180]
@@ -140,13 +141,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/ll6.stl" }
+          Resource: { uri: "../meshes/dae/ll6.dae" }
   -
     name: r_hip_yaw
     parent: body_link
     translation: [0.0, -0.035, 0.0]
     rotation: [0, 1, 0, 0]
-    jointId: 6
+    jointId: 7
     jointType: revolute
     jointAxis: Z
     jointRange: [-180,  180]
@@ -160,13 +161,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/rl1.stl" }
+          Resource: { uri: "../meshes/dae/rl1.dae" }
   -
     name: r_hip_roll
     parent: r_hip_yaw
     translation: [-0.024, 0.0, -0.0285]
     rotation: [0, 1, 0, 0]
-    jointId: 7
+    jointId: 8
     jointType: revolute
     jointAxis: X
     jointRange: [-180,  180]
@@ -180,13 +181,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/rl2.stl" }
+          Resource: { uri: "../meshes/dae/rl2.dae" }
   -
     name: r_hip_pitch
     parent: r_hip_roll
     translation: [0.0241, -0.019, 0.0]
     rotation: [0, 1, 0, 0]
-    jointId: 8
+    jointId: 9
     jointType: revolute
     jointAxis: Y
     jointRange: [-180,  180]
@@ -200,13 +201,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/rl3.stl" }
+          Resource: { uri: "../meshes/dae/rl3.dae" }
   -
     name: r_knee
     parent: r_hip_pitch
     translation: [0.0, 0.0, -0.11015]
     rotation: [0, 1, 0, 0]
-    jointId: 9
+    jointId: 10
     jointType: revolute
     jointAxis: Y
     jointRange: [-180,  180]
@@ -220,13 +221,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/rl4.stl" }
+          Resource: { uri: "../meshes/dae/rl4.dae" }
   -
     name: r_ank_pitch
     parent: r_knee
     translation: [0, 0, -0.110]
     rotation: [0, 1, 0, 0]
-    jointId: 10
+    jointId: 11
     jointType: revolute
     jointAxis: Y
     jointRange: [-180,  180]
@@ -240,13 +241,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/rl5.stl" }
+          Resource: { uri: "../meshes/dae/rl5.dae" }
   -
     name: r_ank_roll
     parent: r_ank_pitch
     translation: [ -0.0241, 0.019, 0 ]
     rotation: [0, 1, 0, 0]
-    jointId: 11
+    jointId: 12
     jointType: revolute
     jointAxis: X
     jointRange: [-180,  180]
@@ -260,14 +261,14 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/rl6.stl" }
+          Resource: { uri: "../meshes/dae/rl6.dae" }
 
   -
     name: l_sho_pitch
     parent: body_link
     translation: [ -0.001, 0.06, 0.111 ]
     rotation: [0, 1, 0, 0]
-    jointId: 12
+    jointId: 13
     jointType: revolute
     jointAxis: Y
     jointRange: [-180, 180]
@@ -281,13 +282,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/la1.stl" }
+          Resource: { uri: "../meshes/dae/la1.dae" }
   -
     name: l_sho_roll
     parent: l_sho_pitch
     translation: [ 0.019, 0.0285, -0.010 ]
     rotation: [0, 1, 0, 0]
-    jointId: 13
+    jointId: 14
     jointType: revolute
     jointAxis: X
     jointRange: [-180, 180]
@@ -301,13 +302,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/la2.stl" }
+          Resource: { uri: "../meshes/dae/la2.dae" }
   -
     name: l_el
     parent: l_sho_roll
     translation: [ 0.0, 0.0904, -0.0001 ]
     rotation: [0, 1, 0, 0]
-    jointId: 14
+    jointId: 15
     jointType: revolute
     jointAxis: X
     jointRange: [-180, 180]
@@ -321,14 +322,14 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/la3.stl" }
+          Resource: { uri: "../meshes/dae/la3.dae" }
 
   -
     name: r_sho_pitch
     parent: body_link
     translation: [ -0.001, -0.06, 0.111 ]
     rotation: [0, 1, 0, 0]
-    jointId: 15
+    jointId: 16
     jointType: revolute
     jointAxis: Y
     jointRange: [-180, 180]
@@ -342,13 +343,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/ra1.stl" }
+          Resource: { uri: "../meshes/dae/ra1.dae" }
   -
     name: r_sho_roll
     parent: r_sho_pitch
     translation: [ 0.019, -0.0285, -0.010 ]
     rotation: [0, 1, 0, 0]
-    jointId: 16
+    jointId: 17
     jointType: revolute
     jointAxis: X
     jointRange: [-180, 180]
@@ -362,13 +363,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/ra2.stl" }
+          Resource: { uri: "../meshes/dae/ra2.dae" }
   -
     name: r_el
     parent: r_sho_roll
     translation: [ 0.0, -0.0904, -0.0001 ]
     rotation: [0, 1, 0, 0]
-    jointId: 17
+    jointId: 18
     jointType: revolute
     jointAxis: X
     jointRange: [-180, 180]
@@ -382,14 +383,14 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/ra3.stl" }
+          Resource: { uri: "../meshes/dae/ra3.dae" }
 
   -
     name: head_pan
     parent: body_link
     translation: [ -0.001, 0.0, 0.1365 ]
     rotation: [0, 1, 0, 0]
-    jointId: 18
+    jointId: 19
     jointType: revolute
     jointAxis: Z
     jointRange: [-180, 180]
@@ -403,13 +404,13 @@ links:
       Transform:
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/h1.stl" }
+          Resource: { uri: "../meshes/dae/h1.dae" }
   -
     name: head_tilt
     parent: head_pan
     translation: [ 0.010, 0.019, 0.0285 ]
     rotation: [0, 1, 0, 0]
-    jointId: 19
+    jointId: 20
     jointType: revolute
     jointAxis: Y
     jointRange: [-180, 180]
@@ -424,7 +425,7 @@ links:
         type: Transform
         scale: [0.001, 0.001, 0.001]
         elements:
-          Resource: { uri: "../meshes/h2.stl" }
+          Resource: { uri: "../meshes/dae/h2.dae" }
   -
     name: cam_link
     parent: head_tilt

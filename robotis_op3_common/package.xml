@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>robotis_op3_common</name>
   <version>0.1.1</version>
   <description>
@@ -17,5 +17,7 @@
   <buildtool_depend>catkin</buildtool_depend>
   <exec_depend>op3_description</exec_depend>
   <exec_depend>op3_gazebo</exec_depend>
-  <export><metapackage/></export>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>
